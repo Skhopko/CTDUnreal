@@ -8,6 +8,11 @@
 AVisuals::AVisuals(){
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
+}
+
+// Called when game starts or when spawned
+void AVisuals::BeginPlay(){
+	Super::BeginPlay();
 
 	FVector positionOne = FVector(0.0f, 0.0f, 0.0f);
 	FActorSpawnParameters params;
@@ -16,13 +21,7 @@ AVisuals::AVisuals(){
 
 	FVector position = PlaceNode();
 	AVisuals*SpawnSphere = GetWorld()->SpawnActor<AVisuals>(AVisuals::StaticClass(), position, rotation, params);
-}
-
-// Called when game starts or when spawned
-void AVisuals::BeginPlay(){
-	Super::BeginPlay();
-
-//	AActor*SpawnComponent(FVector const&Location);
+	Link(positionOne, position, .16f);
 }
 
 // Called every frame
