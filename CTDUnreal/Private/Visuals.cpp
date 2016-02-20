@@ -2,6 +2,7 @@
 
 #include "CTDUnreal.h"
 #include "Visuals.h"
+#include "XMLParser.h"
 
 
 // Sets default values
@@ -13,6 +14,7 @@ AVisuals::AVisuals(){
 // Called when game starts or when spawned
 void AVisuals::BeginPlay(){
 	Super::BeginPlay();
+	FXmlFile file(F"XmlData.xml");
 
 	FVector positionOne = FVector(0.0f, 0.0f, 0.0f);
 	FActorSpawnParameters params;
