@@ -1,7 +1,5 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
+#include "XmlParser.h"
 #include "GameFramework/Actor.h"
 #include "GameFramework/Pawn.h"
 #include "Visuals.generated.h"
@@ -21,7 +19,7 @@ public:
 	// Called every frame
 	virtual void Tick( float DeltaSeconds ) override;
 
-	FActorSpawnParameters params;
+	FXmlFile*file = new FXmlFile("XmlData.xml");
 	float sRadius = 1.0f;
 	FRotator rotation = FRotator();
 };

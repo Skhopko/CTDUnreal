@@ -4,45 +4,44 @@
   <Nodes>
     <Node id="1">
       <Links>
-        <Link>4</Link>
-        <Link>5</Link>
-        <Link>6</Link>
       </Links>
     </Node>
     <Node id="2">
       <Links>
-        <Link>5</Link>
-        <Link>6</Link>
       </Links>
     </Node>
     <Node id="3">
       <Links>
-        <Link>6</Link>
       </Links>
     </Node>
     <Node id="4">
       <Links>
-        <Link>7</Link>
+        <Link>1</Link>
       </Links>
     </Node>
     <Node id="5">
       <Links>
-        <Link>7</Link>
-        <Link>8</Link>
+        <Link>2</Link>
+        <Link>1</Link>
       </Links>
     </Node>
     <Node id="6">
       <Links>
-        <Link>7</Link>
-        <Link>8</Link>
+        <Link>3</Link>
+        <Link>1</Link>
+        <Link>2</Link>
       </Links>
     </Node>
     <Node id="7">
       <Links>
+        <Link>4</Link>
+        <Link>5</Link>
       </Links>
     </Node>
     <Node id="8">
       <Links>
+        <Link>6</Link>
+        <Link>5</Link>
       </Links>
     </Node>
   </Nodes>
